@@ -15,7 +15,8 @@ export default function setupIcons (this: ModuleThis, preset: IconPreset) {
     this.options.head!.link!.push({
       rel: 'stylesheet',
       type: 'text/css',
-      href: presetsCDN[preset]
+      href: presetsCDN[preset],
+      defer: true
     })
   }
 }
